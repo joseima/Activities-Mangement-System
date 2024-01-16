@@ -1,0 +1,158 @@
+* {font-family: sans-serif; transition: all .6s ease; overflow-x: hidden;}
+.content {display: flex; flex-wrap: wrap; justify-content: center; margin-bottom: 50px; }
+body {padding: 0px; margin: 0px;}
+h1 {color: #fff;} 
+h3 {font-size: 16px; border-bottom: 1px solid; color: #4284bd; clear: both;padding: 0px 0px 10px; margin: 0px 0px 20px; } 
+h2 {font-size: 20px;  color: #666; padding: 0px; margin: 0px 0px 15px;; text-align: center;} 
+h5 {color: #666; font-size: 14px; padding: 0px; margin: 0px 0px 15px;} 
+p {color: #666; font-size: 14px; padding: 0px; margin: 0px 0px 10px;} 
+input[type="submit"] { background-color: #4284bd; color: #fff; cursor: pointer; line-height: 16px; font-size: 14px;} 
+.edicion {  padding: 10px; background-color: #daefff;}
+header { background-color: #00a4cb; padding: 5%; margin: 0px;
+    background-image: url("/VoluntariosCR/public/VoluntariatCAT.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+header h3 {color: #fff; font-size: 22px; border-color: red;}
+form{ margin: 0px 0px 10px;}
+input, select {padding: 5px 10px; margin: 5px; background-color: #fff; border: none; font-size: 14px; overflow: hidden;margin-bottom: 20px;}
+select { padding: 10px; }
+.card input {margin: 5px!important; }
+.card form {margin: 0px!important; }
+.ficha {width: 35%; display: block;padding: 3%; margin-bottom: 0px; background-color: #daefff; text-align: center;}
+.contenido {width: 70%; display: block;padding: 3%; margin: 0px auto; background-color: #daefff; }
+.contenido h1 {color: #00a4cb; font-size: 26px;}
+.contenido form {background-color: #f1f1f1; padding: 20px;}
+.ficha a { margin-bottom: 10px; display: block; font-size: 14px; }
+.card {width: 93%; border-radius: 4px; box-shadow: 1px 1px 11px -3px grey; display: block; padding: 3%; background-color: #f0f8ff; margin-bottom: 40px;}
+option {margin: 0px;}
+.accion {margin-right: 10px;
+    margin-top: 5px;
+    font-size: 14px;
+    float: left;
+    display: block;
+    background-color: #4284bd; 
+    color: #fff;
+    padding: 5px 10px;}
+h2.titulosec {
+    background-color: #4284bd; 
+    color: #fff;
+    padding: 10px;
+    margin: 0px;
+}
+th {background-color: #b7e4c1; font-weight: bold; padding: 10px;}
+h2.mensaje {color: red; background-color: #ff9800; margin: 0px;}
+input[type="button"] {background-color: #4284bd; color: #fff; cursor: pointer; width: 200px; line-height: 19px; font-size: 18px;} 
+input[type="button"]:hover {background-color: #215788; color: #cacaca; } 
+input[type="number"] { min-width: 90px; }
+.message { background-color: #d4f3d4;border: 1px solid #3a843a; padding: 10px; width: 100%, display: block;  }
+.message p {margin: 0px; padding: 0px;}
+textarea {     margin-bottom: 20px;
+    width: 300px;
+    vertical-align: top;
+    border: none;
+    min-height: 100px;}
+.dia {width: 21%; padding: 2%; }
+.main {display: flex; flex-wrap: wrap; justify-content: space-evenly;}
+.news {width: 59%;  display: block; position: relative;}
+.noticia {padding: 4% 5%; width: 90%;  position: absolute; top: 0; right: 0; left: 0; bottom: 0; opacity: 0;}
+.noticiavista {opacity: 1}
+.news .noticia:nth-child(1) { 
+    background-color: #ddf1ef;
+    background-image: url("/VoluntariosCR/public/notback01.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+.news .noticia:nth-child(2) { 
+    background-color: #d0f3ef;
+    background-image: url("/VoluntariosCR/public/notback02.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+.news .noticia:nth-child(3) { 
+    background-color: #c7ece9;
+    background-image: url("/VoluntariosCR/public/notback03.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+.news .noticia:nth-child(4) { 
+    background-color: #acded8;
+    background-image: url("/VoluntariosCR/public/notback04.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+.lunes {background-color: #ffe9c9; display: block;}
+.martes {background-color: #fff3d1; display: block;}
+.miercoles {background-color: #fffce6; display: block;}
+.jueves {background-color: #f2ffe3; display: block;}
+.viernes {background-color: #b8e2cb; display: block;}
+.sabado {background-color: #e0ffe1; display: block;}
+.domingo {background-color: #ceecea; display: block;}
+.dia h2 {margin-bottom: 20px;}
+.lunes h2 {color: #ff9800; }
+.martes h2 {color: #ffc107; }
+.miercoles h2 {color: #ffeb3b; }
+.jueves h2 {color: #cddc39; }
+.viernes h2 {color: #8bc34a; }
+.sabado h2 {color: #4caf50; }
+.domingo h2 {color: #009688; }
+
+/** CARRUSEL DE NOTICIAS/*/
+
+
+p.control_prev, p.control_next{
+  position: absolute;
+  top: 40%;
+  z-index: 999;
+  display: block;
+  padding: 2% 1%;
+  width: auto;
+  height: auto;
+  background: #2a2a2a;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+.noticia:first-child p.control_prev, .noticia:last-child  p.control_next {
+    z-index: -10;
+    width: 0px;
+    padding: 0;
+    height: 0px;
+    display: none;
+    margin: 0;
+}
+
+p.control_prev:hover, p.control_next:hover {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+p.control_prev {
+    left: 0;
+  border-radius: 0 2px 2px 0;
+}
+
+p.control_next {
+  right: 0;
+  border-radius: 2px 0 0 2px;
+}
+
+
+
+/*MEDIA QUQERIES */
+
+@media screen and (max-width: 1180px) {
+	.dia {width: 29%;}
+  .ficha, .news {width: 100%;}
+  .news {height: 316px;}    
+}
+@media screen and (max-width: 860px) {
+	.dia {width: 46%;}
+}
+@media screen and (max-width: 560px) {
+	.dia {width: 96%;}
+}
